@@ -41,7 +41,7 @@ const ToursApp = () => {
   if (tours.length === 0) {
     return <main>
       <h2>No Tours Left</h2>
-      <button type="button" className="btn" onClick={() => fetchTours()}>
+      <button type="button" className="btn" onClick={fetchTours}>
         Fetch Tours
       </button>
     </main>
