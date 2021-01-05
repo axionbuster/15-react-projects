@@ -9,10 +9,10 @@ const App = () => {
   const [people, setPeople] = useState(birthdays)
   return (
     <main>
-      <section className="container">
+      <section className='container'>
         <h3>{people.length} birthdays today</h3>
         <List people={people} />
-        <button type="button" onClick={() => setPeople([])}>
+        <button type='button' onClick={() => setPeople([])}>
           Clear All
         </button>
       </section>

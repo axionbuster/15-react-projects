@@ -24,8 +24,8 @@ const ToursApp = () => {
     }
   }
 
-  const removeTour = (id) => {
-    const newTours = tours.filter((tour) => tour.id !== id)
+  const removeTour = id => {
+    const newTours = tours.filter(tour => tour.id !== id)
     setTours(newTours)
   }
 
@@ -35,16 +35,22 @@ const ToursApp = () => {
   }, [])
 
   if (loading) {
-    return <main><Loading /></main>
+    return (
+      <main>
+        <Loading />
+      </main>
+    )
   }
 
   if (tours.length === 0) {
-    return <main>
-      <h2>No Tours Left</h2>
-      <button type="button" className="btn" onClick={fetchTours}>
-        Fetch Tours
-      </button>
-    </main>
+    return (
+      <main>
+        <h2>No Tours Left</h2>
+        <button type='button' className='btn' onClick={fetchTours}>
+          Fetch Tours
+        </button>
+      </main>
+    )
   }
 
   return (
