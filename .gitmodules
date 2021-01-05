@@ -1,0 +1,3 @@
+[submodule "react-projects"]
+	path = react-projects
+	url = https://github.com/john-smilga/react-projects.git
