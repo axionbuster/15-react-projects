@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import List from './List'
 
-import birthdays from '../data/birthdays'
+import birthdays from './birthdays'
 
 import './App.css'
 

@@ -6,6 +6,7 @@ import Home from './Home'
 import BirthdaysApp from './00-birthdays/App'
 import ToursApp from './01-tours/App'
 import ReviewsApp from './02-reviews/App'
+import AccordionApp from './03-accordion/App'
 
 const Index = () => {
   return (
@@ -25,6 +26,9 @@ const Index = () => {
             <li>
               <Link to='/reviews'>Reviews</Link>
             </li>
+            <li>
+              <Link to='/accordion'>Accordion</Link>
+            </li>
           </ul>
         </nav>
         <Switch>
@@ -36,6 +40,9 @@ const Index = () => {
           </Route>
           <Route path='/reviews'>
             <ReviewsApp />
+          </Route>
+          <Route path='/accordion'>
+            <AccordionApp />
           </Route>
           <Route path='/'>
             <Home />
